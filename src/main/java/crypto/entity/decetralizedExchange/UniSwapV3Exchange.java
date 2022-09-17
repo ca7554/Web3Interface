@@ -8,6 +8,9 @@ import crypto.contracts.liquidityPair.UniSwapV3Pair;
 
 import java.math.BigDecimal;
 
+/**
+ * UniSwapV3Exchange class gets prices and interacts with liquidity pairs from any DEX that uses the UniSwapV3Factory contract
+ */
 public class UniSwapV3Exchange extends DecentralizedExchange {
     private UniSwapV3Factory uniSwapV3Factory;
     private final long LOWEST_FEE = 3000L;

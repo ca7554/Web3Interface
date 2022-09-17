@@ -23,6 +23,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
+/**
+ * EthHttpGateway class that uses an Ethereum HTTP RPC endpoint to connect and interact with ethereum like/forked blockchains
+ */
 public class EthHttpGateway implements Web3Gateway{
     private String linkURL;
     private Web3j web3Gateway;

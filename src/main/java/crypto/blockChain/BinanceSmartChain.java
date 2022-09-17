@@ -6,6 +6,9 @@ import crypto.web3Gateway.BinanceSmartChainGateWay.BinanceSmartChainRpcHttpGateW
 
 import java.util.HashMap;
 
+/**
+ * BinanceSmartChain class stores the contracts and blockchain name and connects to the BinanceSmartChain blockchain using a BinanceSmartChainGateWay
+ */
 public class BinanceSmartChain extends Blockchain{
     public static final String BLOCK_CHAIN_NAME = "Binance Smart Chain";
     public static final HashMap<String, Contract> CONTRACTS = new HashMap<>();

@@ -4,6 +4,9 @@ import crypto.blockChain.PolygonBlockchain;
 import crypto.contracts.cryptoCurrency.UsdCoinPolygon;
 import crypto.contracts.cryptoCurrency.WrappedPolygon;
 
+/**
+ * WmaticUsdcPairQuickSwap class is the Contract for WMATIC/USDC Pair on QuickSwap
+ */
 public class WmaticUsdcPairQuickSwap extends UniSwapV2Pair {
     public static final String PAIR_ADDRESS = "0x6e7a5fafcec6bb1e78bae2a1f0b612012bf14827";
 

@@ -3,6 +3,9 @@ package crypto.entity.decetralizedExchange;
 import crypto.blockChain.PolygonBlockchain;
 import crypto.contracts.factory.UniSwapV3Factory;
 
+/**
+ * UniSwapPolygon class gets prices and interacts with liquidity pairs from the UniSwap Polygon DEX
+ */
 public class UniSwapPolygon extends UniSwapV3Exchange {
     private static final String UNI_SWAP_FACTORY_CONTRACT_ADDRESS = "0x1F98431c8aD98523631AE4a59f267346ea31F984";
 

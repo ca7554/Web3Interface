@@ -5,6 +5,9 @@ import org.web3j.protocol.Web3j;
 import org.web3j.protocol.http.HttpService;
 import quickUtils.QuickUtils;
 
+/**
+ * AlchemyPolygonHttpGateway class connects to the Polygon blockchain using a custom Alchemy RPC endpoint
+ */
 public class AlchemyPolygonHttpGateway extends PolygonHttpGateway {
     private static  AlchemyPolygonHttpGateway instance;
     private static final String LINK_POLYGON_ALCHEMY_URL = "ADD CUSTOM API KEY";

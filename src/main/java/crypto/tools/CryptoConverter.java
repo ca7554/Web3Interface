@@ -4,6 +4,9 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.math.RoundingMode;
 
+/**
+ * CryptoConverter class is used to do common arithmetic conversions that is related to Blockchain technology
+ */
 public class CryptoConverter {
     public static String addressToABI(String address){
         return "000000000000000000000000" + address.substring(2);

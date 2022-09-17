@@ -5,6 +5,9 @@ import org.web3j.protocol.Web3j;
 import org.web3j.protocol.http.HttpService;
 import quickUtils.QuickUtils;
 
+/**
+ * BinanceSmartChainRpcHttpGateWay class connects to the BSC blockchain using a commonly used RPC endpoint
+ */
 public class BinanceSmartChainRpcHttpGateWay extends EthHttpGateway implements BinanceSmartChainGateWay {
     private static BinanceSmartChainRpcHttpGateWay instance;
     private static final String LINK_BINANCE_SMART_CHAIN_RPC_GATEWAY = "https://bsc-dataseed.binance.org/";

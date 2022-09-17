@@ -1,5 +1,8 @@
 package crypto.tools;
 
+/**
+ * CryptoTags class is used to quicly access commonly used crypto names
+ */
 public class CryptoTags {
     public static final String USD_COIN_CRYPTO_NAME = "USD Coin";
     public static final String POLYGON_CRYPTO_NAME = "Polygon";

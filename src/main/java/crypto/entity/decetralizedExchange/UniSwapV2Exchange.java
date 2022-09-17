@@ -9,6 +9,9 @@ import crypto.tools.CryptoConverter;
 
 import java.math.BigDecimal;
 
+/**
+ * UniSwapV2Exchange class gets prices and interacts with liquidity pairs from any DEX that uses the UniSwapV2Factory contract
+ */
 public class UniSwapV2Exchange extends DecentralizedExchange {
     private UniSwapV2Factory uniSwapV2Factory;
 

@@ -7,6 +7,10 @@ import crypto.contracts.cryptoCurrency.CryptoCurrency;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * LiquidityPairContract abstract class stores CryptoCurrency pairs
+ * and implements LiquidityPair contract methods from any LiquidityPair contract type when inherited
+ */
 public abstract class LiquidityPairContract extends Contract implements LiquidityPair {
     private CryptoCurrency cryptoCurrency0;
     private CryptoCurrency cryptoCurrency1;
@@ -17,6 +21,16 @@ public abstract class LiquidityPairContract extends Contract implements Liquidit
         this.cryptoCurrency0 = cryptoCurrency0;
         this.cryptoCurrency1 = cryptoCurrency1;
     }
+
+    @Override
+    public String getAsset(int index){
+        if(index != 0 && index != 1)
+            return "Error Index Must Be 0 or 1";
+        return index == 0 ? cryptoCurrency0.getName() : cryptoCurrency1.getName();
+    }
+
+    public abstract String[] getReserves();
+    public abstract String getCryptoCurrencyAddress(int tokenIndex);
 
     public static LiquidityPairContract getLiquidityPairContractFromString(Blockchain blockchain, String objectString){
         Pattern pattern = Pattern.compile("name='([^',]+)'" +
@@ -44,16 +58,6 @@ public abstract class LiquidityPairContract extends Contract implements Liquidit
 
         return liquidityPairContract;
     }
-
-    @Override
-    public String getAsset(int index){
-        if(index != 0 && index != 1)
-            return "Error Index Must Be 0 or 1";
-        return index == 0 ? cryptoCurrency0.getName() : cryptoCurrency1.getName();
-    }
-
-    public abstract String[] getReserves();
-    public abstract String getCryptoCurrencyAddress(int tokenIndex);
 
     public CryptoCurrency getCryptoCurrency0() {
         return cryptoCurrency0;

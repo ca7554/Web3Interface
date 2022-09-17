@@ -4,6 +4,9 @@ package crypto.entity.decetralizedExchange;
 import crypto.blockChain.PolygonBlockchain;
 import crypto.contracts.factory.UniSwapV2Factory;
 
+/**
+ * SushiSwapPolygon class gets prices and interacts with liquidity pairs from the SushiSwap Polygon DEX
+ */
 public class SushiSwapPolygon extends UniSwapV2Exchange {
     private static final String SUSHI_SWAP_FACTORY_CONTRACT_ADDRESS = "0xc35DADB65012eC5796536bD9864eD8773aBc74C4";
 

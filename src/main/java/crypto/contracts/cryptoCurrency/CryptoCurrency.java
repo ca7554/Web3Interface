@@ -15,6 +15,9 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * CryptoCurrency class stores the main symbol and decimals for a CryptoCurrency contract
+ */
 public class CryptoCurrency extends Contract {
     private String mainSymbol;
     private int decimals;

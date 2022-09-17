@@ -3,6 +3,9 @@ import crypto.entity.decetralizedExchange.QuickSwap;
 import crypto.web3Gateway.PolygonGateway.PocketNetworkPolygonHttpGateway;
 import quickUtils.QuickUtils;
 
+/**
+ * Main class is used to run code
+ */
 public class Main {
     public static void main(String[] args) {
         /*

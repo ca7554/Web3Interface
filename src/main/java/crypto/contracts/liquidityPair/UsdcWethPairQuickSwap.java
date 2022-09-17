@@ -4,6 +4,9 @@ import crypto.blockChain.PolygonBlockchain;
 import crypto.contracts.cryptoCurrency.UsdCoinPolygon;
 import crypto.contracts.cryptoCurrency.WrappedEthereumPolygon;
 
+/**
+ * UsdcWethPairQuickSwap class is the Contract for USDC/WETH Pair on QuickSwap
+ */
 public class UsdcWethPairQuickSwap extends UniSwapV2Pair {
     public static final String PAIR_ADDRESS = "0x853ee4b2a13f8a742d64c8f088be7ba2131f670d";
 

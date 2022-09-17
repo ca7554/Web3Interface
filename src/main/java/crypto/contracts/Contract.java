@@ -2,6 +2,9 @@ package crypto.contracts;
 
 import crypto.blockChain.Blockchain;
 
+/**
+ * Contract class stores the blockchain, name, and address of a blockchain contract
+ */
 public class Contract {
     private String name;
     private Blockchain blockChain;

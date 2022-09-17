@@ -3,6 +3,9 @@ package crypto.contracts.cryptoCurrency;
 import crypto.blockChain.PolygonBlockchain;
 import crypto.tools.CryptoTags;
 
+/**
+ * UsdCoinPolygon class is the CryptoCurrency Contract for USDC on the Polygon Blockchain
+ */
 public final class UsdCoinPolygon extends CryptoCurrency {
     public static final String MAIN_NAME = CryptoTags.USD_COIN_CRYPTO_NAME;
     public static final String MAIN_SYMBOL = CryptoTags.USD_COIN_CRYPTO_SYMBOL;

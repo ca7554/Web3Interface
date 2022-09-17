@@ -3,7 +3,9 @@ package crypto.web3Gateway.PolygonGateway;
 import org.web3j.protocol.Web3j;
 import org.web3j.protocol.http.HttpService;
 
-//Anonymous Gateway
+/**
+ * PocketNetworkPolygonHttpGateway class connects to the Polygon blockchain using a decentralized RPC endpoint
+ */
 public class PocketNetworkPolygonHttpGateway extends PolygonHttpGateway {
     private static  PocketNetworkPolygonHttpGateway instance;
     private static final String LINK_POLYGON_POCKET_NETWORK_URL = "https://poly-rpc.gateway.pokt.network/";

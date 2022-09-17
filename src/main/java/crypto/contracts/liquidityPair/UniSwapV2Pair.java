@@ -17,6 +17,9 @@ import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * UniSwapV2Pair class interacts with liquidity pairs and implements contract methods that uses the UniSwapV2Pair contract
+ */
 public class UniSwapV2Pair extends LiquidityPairContract {
     public UniSwapV2Pair(String name, Blockchain blockChain, String address, CryptoCurrency cryptoCurrency0,
                          CryptoCurrency cryptoCurrency1) {

@@ -3,6 +3,9 @@ package crypto.entity.decetralizedExchange;
 import crypto.blockChain.BinanceSmartChain;
 import crypto.contracts.factory.UniSwapV2Factory;
 
+/**
+ * PancakeSwap class gets prices and interacts with liquidity pairs from the PancakeSwap DEX
+ */
 public class PancakeSwap extends UniSwapV2Exchange{
     private static final String PANCAKE_SWAP_FACTORY_CONTRACT_ADDRESS = "0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73";
 

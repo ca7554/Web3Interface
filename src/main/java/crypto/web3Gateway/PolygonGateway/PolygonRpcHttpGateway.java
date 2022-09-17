@@ -4,6 +4,9 @@ import org.web3j.protocol.Web3j;
 import org.web3j.protocol.http.HttpService;
 import quickUtils.QuickUtils;
 
+/**
+ * PolygonRpcHttpGateway class connects to the Polygon blockchain using a commonly used RPC endpoint
+ */
 public class PolygonRpcHttpGateway extends PolygonHttpGateway {
     private static  PolygonRpcHttpGateway instance;
     private static final String LINK_POLYGON_RPC_GATEWAY = "https://polygon-rpc.com/";

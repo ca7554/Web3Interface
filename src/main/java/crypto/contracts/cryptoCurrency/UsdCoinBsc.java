@@ -3,6 +3,9 @@ package crypto.contracts.cryptoCurrency;
 import crypto.blockChain.BinanceSmartChain;
 import crypto.tools.CryptoTags;
 
+/**
+ * UsdCoinBsc class is the CryptoCurrency Contract for USDC on the Binance Smart Chain
+ */
 public final class UsdCoinBsc extends CryptoCurrency{
     public static final String MAIN_NAME = CryptoTags.USD_COIN_CRYPTO_NAME;
     public static final String MAIN_SYMBOL = CryptoTags.USD_COIN_CRYPTO_SYMBOL;

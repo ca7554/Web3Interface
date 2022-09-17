@@ -4,6 +4,9 @@ import org.web3j.protocol.Web3j;
 import org.web3j.protocol.http.HttpService;
 import quickUtils.QuickUtils;
 
+/**
+ * PolygonMumbaiTestNetHttpGateway class connects to the Polygon Mumbai TestNet blockchain using a commonly used RPC endpoint
+ */
 public class PolygonMumbaiTestNetHttpGateway extends PolygonHttpGateway {
     private static  PolygonMumbaiTestNetHttpGateway instance;
     private static final String LINK_POLYGON_MUMBAI_TESTNET = "https://rpc-mumbai.maticvigil.com/";

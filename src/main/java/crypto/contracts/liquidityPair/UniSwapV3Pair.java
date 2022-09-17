@@ -17,6 +17,9 @@ import java.math.RoundingMode;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * UniSwapV3Pair class interacts with liquidity pairs and implements contract methods that uses the UniSwapV3Pair contract
+ */
 public class UniSwapV3Pair extends LiquidityPairContract {
     public UniSwapV3Pair(String name, Blockchain blockChain, String address, CryptoCurrency cryptoCurrency0,
                          CryptoCurrency cryptoCurrency1) {

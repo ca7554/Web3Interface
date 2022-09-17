@@ -4,6 +4,9 @@ import crypto.blockChain.Blockchain;
 import crypto.contracts.liquidityPair.LiquidityPairContract;
 import crypto.entity.Exchange;
 
+/**
+ * DecentralizedExchange abstract class gets prices and interacts with liquidity pairs from any DEX when inherited
+ */
 public abstract class DecentralizedExchange implements Exchange {
     private Blockchain blockchain;
 

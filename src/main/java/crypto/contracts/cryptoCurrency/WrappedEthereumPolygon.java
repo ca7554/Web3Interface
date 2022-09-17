@@ -3,6 +3,9 @@ package crypto.contracts.cryptoCurrency;
 import crypto.blockChain.PolygonBlockchain;
 import crypto.tools.CryptoTags;
 
+/**
+ * WrappedEthereumPolygon class is the CryptoCurrency Contract for Wrapped Ethereum on the Polygon Blockchain
+ */
 public final class WrappedEthereumPolygon extends CryptoCurrency {
     public static final String MAIN_NAME = CryptoTags.WRAPPED_ETHEREUM_CRYPTO_SYMBOL;
     public static final String MAIN_SYMBOL = CryptoTags.ETHEREUM_CRYPTO_SYMBOL;

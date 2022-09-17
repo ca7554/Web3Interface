@@ -8,6 +8,9 @@ import org.web3j.protocol.core.methods.response.EthCall;
 
 import java.util.HashMap;
 
+/**
+ * Blockchain class stores the contracts, blockchain name and uses the stored Web3Gateway to connect to any blockchain
+ */
 public class Blockchain {
     private Web3Gateway web3Gateway;
     private HashMap<String, Contract> contracts;
