@@ -1,5 +1,6 @@
 import crypto.blockChain.PolygonBlockchain;
 import crypto.entity.decetralizedExchange.QuickSwap;
+import crypto.web3Gateway.EthHttpGateway;
 import crypto.web3Gateway.PolygonGateway.PocketNetworkPolygonHttpGateway;
 import quickUtils.QuickUtils;
 
@@ -31,7 +32,31 @@ public class Main {
         //Prints price
         QuickUtils.println(price);
 
-        //Shutdown Web3J instance
+        //Shuts down all instances of Polygon blockchain using PocketNetworkPolygonHttpGateway
         polygonBlockchain.shutDown();
+
+
+        /*
+            Example for printing price of WETH on QuickSwap NOT using a decentralized RPC end point.
+         */
+
+        //Disables warnings from showing when using a non-anonymous gateway for all EthHttpGateway's
+        EthHttpGateway.setShowAnonymousWarning(false);
+
+        //Creates a QuickSwap object and uses the PolygonRpcHttpGateway as default
+        QuickSwap quickSwap1 = new QuickSwap();
+
+        //Addresses of assets contracts (case-sensitive)
+        String polygonUsdcAddress1 = "0x2791bca1f2de4661ed88a30c99a7a9449aa84174";
+        String polygonWethAddress1 = "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619";
+
+        //Gets the price on QuickSwap
+        String price1 = quickSwap.getPriceOfCryptoCurrencyFromLiquidityPair(polygonUsdcAddress1, polygonWethAddress1, 1);
+
+        //Prints price
+        QuickUtils.println(price1);
+
+        //Shuts down all instances of Polygon blockchain using PolygonRpcHttpGateway
+        quickSwap1.getBlockchain().shutDown();
     }
 }
