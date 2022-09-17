@@ -18,7 +18,6 @@ public class AlchemyPolygonHttpGateway extends PolygonHttpGateway {
             QuickUtils.println("WARNING NOT ANONYMOUS HTTP INSTANCE CREATED OR USED");
         if(instance == null){
             instance = new AlchemyPolygonHttpGateway(Web3j.build(new HttpService(LINK_POLYGON_ALCHEMY_URL)));
-            return instance;
         }
         return instance;
     }

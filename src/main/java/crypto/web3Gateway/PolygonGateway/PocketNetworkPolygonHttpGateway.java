@@ -15,7 +15,6 @@ public class PocketNetworkPolygonHttpGateway extends PolygonHttpGateway {
     public static PocketNetworkPolygonHttpGateway  getInstance(){
         if(instance == null){
             instance = new PocketNetworkPolygonHttpGateway(Web3j.build(new HttpService(LINK_POLYGON_POCKET_NETWORK_URL)));
-            return instance;
         }
         return instance;
     }

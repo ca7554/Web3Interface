@@ -19,7 +19,6 @@ public class BinanceSmartChainRpcHttpGateWay extends EthHttpGateway implements B
         if(instance == null){
             instance = new BinanceSmartChainRpcHttpGateWay(Web3j.build(
                     new HttpService(LINK_BINANCE_SMART_CHAIN_RPC_GATEWAY)));
-            return instance;
         }
         return instance;
     }

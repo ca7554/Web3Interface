@@ -17,7 +17,6 @@ public class PolygonMumbaiTestNetHttpGateway extends PolygonHttpGateway {
             QuickUtils.println("WARNING NOT ANONYMOUS HTTP INSTANCE CREATED OR USED");
         if(instance == null){
             instance = new PolygonMumbaiTestNetHttpGateway(Web3j.build(new HttpService(LINK_POLYGON_MUMBAI_TESTNET)));
-            return instance;
         }
         return instance;
     }

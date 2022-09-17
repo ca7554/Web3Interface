@@ -17,7 +17,6 @@ public class PolygonRpcHttpGateway extends PolygonHttpGateway {
             QuickUtils.println("WARNING NOT ANONYMOUS HTTP INSTANCE CREATED OR USED");
         if(instance == null){
             instance = new PolygonRpcHttpGateway(Web3j.build(new HttpService(LINK_POLYGON_RPC_GATEWAY)));
-            return instance;
         }
         return instance;
     }

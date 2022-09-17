@@ -16,7 +16,6 @@ public class PocketNetworkBscHttpGateWay extends EthHttpGateway implements Binan
     public static PocketNetworkBscHttpGateWay getInstance(){
         if(instance == null){
             instance = new PocketNetworkBscHttpGateWay(Web3j.build(new HttpService(LINK_BSC_POCKET_NETWORK_URL)));
-            return instance;
         }
         return instance;
     }
